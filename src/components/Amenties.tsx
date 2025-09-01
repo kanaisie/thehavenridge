@@ -3,10 +3,10 @@ import Image from "next/image";
 
 const amenities = [
 { title: "Diabetic Care", src: "/images/amenities/meal.jpg", alt: "Caregiver assisting with grooming" },
-{ title: "Room Amenties", src: "/images/gallery/livingroom.jpg", alt: "Cable, Wifi, Bath Tubs &  Respite" },
+{ title: "Room Amenties", src: "/images/gallery/LivingRoom.jpg", alt: "Cable, Wifi, Bath Tubs &  Respite" },
 { title: "Activities", src: "/images/amenities/activities.jpg", alt: "Art Classes, Stretching Classes, Live Musical and Parties" },
 { title: "Meal Preparation", src: "/images/amenities/smiling.jpg", alt: "Healthy meal preparation in the kitchen" },
-{ title: "Common Areas", src: "/images/gallery/common.jpg", alt: "Outsie Patio,Indoor Common Areas,Media Center" },
+{ title: "Common Areas", src: "/images/gallery/Common.jpg", alt: "Outsie Patio,Indoor Common Areas,Media Center" },
 { title: "Transportation & Residential Parking", src: "/images/amenities/transportation.jpg", alt: "Safe ride to appointments" },
 
 ];
