@@ -1,0 +1,27 @@
+// prisma/schema.prisma
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum ReviewStatus {
+  PENDING
+  APPROVED
+}
+
+model Testimon {
+  id        Int          @id @default(autoincrement())
+  name      String
+  rating    Int
+  message   String
+  photoUrl  String?
+  status    ReviewStatus @default(PENDING)
+  createdAt DateTime     @default(now())
+
+  @@map("TESTIMON") // underlying SQL table name (uppercase)
+}

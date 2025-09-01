@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- Color tokens (HSL) ---- */
+:root {
+  /* Ocean (professional blue) */
+    /* GOLD as brand */
+  --brand-50:  45 100% 97%;
+  --brand-100: 45 95% 92%;
+  --brand-200: 45 92% 85%;
+  --brand-300: 45 90% 75%;
+  --brand-400: 45 90% 60%;
+  --brand-500: 43 96% 50%;   /* rich gold */
+  --brand-600: 40 92% 44%;   /* darker gold for contrast */
+  --brand-700: 38 88% 36%;   /* headings/icons on white */
+  --brand-800: 36 80% 28%;
+  --brand-900: 34 72% 22%;
+
+  /* Accent = EMERALD (light touch) */
+  --accent-500: 142 70% 45%;
+  --accent-600: 142 72% 38%;
+}
+
+/* Optional alternate theme (soft purple/rose):
+:root.theme-orchid {
+  --brand-500: 262 75% 55%;
+  --brand-600: 262 70% 47%;
+  --accent-500: 340 82% 52%;
+  --accent-600: 340 82% 45%;
+}
+*/
+
+/* Small utility helpers */
+@layer utilities {
+  .card-gradient {
+    @apply p-[1px] rounded-2xl bg-gradient-to-br from-brand-200 to-[hsl(var(--accent-500))]/40;
+  }
+  .card-surface { @apply rounded-2xl bg-white border border-gray-200; }
+   .container-fluid { @apply w-full px-4 sm:px-6 lg:px-8; } /* no max-width */
+}
+
+/* src/app/globals.css */
+
+ 
+/* Simple prose and container helpers */
+.prose p { @apply text-gray-700 leading-7; }
+.container { @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8; }
+
+
+/* Buttons */
+.btn { @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-medium shadow-sm transition; }
+.btn-primary { @apply bg-brand-600 text-white hover:bg-brand-700; }
+.btn-outline { @apply border border-brand-600 text-brand-700 hover:bg-brand-50; }
+
+
+/* Cards */
+.card { @apply rounded-2xl border border-gray-200 bg-white shadow-sm; }
+
+
+.sticky{
+    background-color: #FFFFF0 !important;
+   
+}
+
+.border-t{
+             background-color: hsl(var(--brand-100));
+
+
+}

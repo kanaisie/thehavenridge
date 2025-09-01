@@ -1,0 +1,10 @@
+-- CreateTable
+CREATE TABLE "TESTIMON" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "name" TEXT NOT NULL,
+    "rating" INTEGER NOT NULL,
+    "message" TEXT NOT NULL,
+    "photoUrl" TEXT,
+    "status" TEXT NOT NULL DEFAULT 'PENDING',
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
