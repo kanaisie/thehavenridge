@@ -78,7 +78,7 @@ return (
 
 
 
-{/* 
+
 <section className="bg-gradient-to-b from-brand-50 to-white">
 <div className="container grid gap-10 py-16 md:grid-cols-2 md:items-center">
 <div>
@@ -98,8 +98,7 @@ From companionship to live‑in support, {site.name} brings peace of mind to fam
 <img src="/images/hero.jpg" alt="Caregiver with client" className="rounded-2xl shadow-lg border border-gray-200"/>
 </div>
 </div>
-</section> */}
-
+</section>
 
 
 
