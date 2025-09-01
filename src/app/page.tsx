@@ -23,12 +23,12 @@ const slides = [
 ];
 
 const galleryImages = [
-{ src: "/images/gallery/Bedroom.jpg", alt: "Smiling caregiver and client in living room" },
-{ src: "/images/gallery/LivingRoom.jpg", alt: "Preparing a healthy meal in kitchen" },
-{ src: "/images/gallery/Dinning.jpg", alt: "Dining room for all Guest" },
-{ src: "/images/gallery/Common.jpg", alt: "Companionship activities and reading" },
-{ src: "/images/gallery/Kitchen.jpg", alt: "Light housekeeping support" },
-{ src: "/images/gallery/Bedroom-4.jpg", alt: "Transportation to appointments" },
+{ src: "/images/gallery/bed.jpg", alt: "Smiling caregiver and client in living room" },
+{ src: "/images/gallery/living.jpg", alt: "Preparing a healthy meal in kitchen" },
+{ src: "/images/gallery/kitchen-2.jpg", alt: "Dining room for all Guest" },
+{ src: "/images/gallery/meal.jpg", alt: "Companionship activities and reading" },
+{ src: "/images/gallery/bed.jpg", alt: "Light housekeeping support" },
+{ src: "/images/gallery/bed.jpg", alt: "Transportation to appointments" },
 ];
 export default function HomePage(){
 return (
