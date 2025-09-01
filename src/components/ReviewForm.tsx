@@ -145,7 +145,7 @@ export default function ReviewForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="grid gap-3 text-center rounded-2xl border p-4 bg-white">
+    <form onSubmit={onSubmit} className="grid gap-3  rounded-2xl border p-4 bg-white">
       <h3 className="text-lg font-semibold">Share your testimonial</h3>
 
       {/* Honeypot field (hidden) */}
