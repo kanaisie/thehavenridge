@@ -105,7 +105,7 @@ From companionship to live‑in support, {site.name} brings peace of mind to fam
 
 
 <section className="container py-16">
-<h2 className="text-2xl font-semibold">Our Services</h2>
+<h2 className="text-2xl font-semibold">HomeCare Service</h2>
 <p className="text-gray-700 mt-2">Personalized plans from a few hours a week to 24/7 live‑in care.</p>
 <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 {site.services.map(s => (
