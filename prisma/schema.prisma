@@ -1,12 +1,14 @@
 // prisma/schema.prisma
 
-
-
 datasource db {
-  provider  = "postgresql"
-  url       = env("postgres://3823b9a87f34433f435302a1a0f3bea3ba0d37dcf3cbb28c55e333867bae0eb0:sk_lcdEuGlsHAK2qwffVPCvA@db.prisma.io:5432/postgres?sslmode=require")
-  directUrl = env("postgres://3823b9a87f34433f435302a1a0f3bea3ba0d37dcf3cbb28c55e333867bae0eb0:sk_lcdEuGlsHAK2qwffVPCvA@db.prisma.io:5432/postgres?sslmode=require")
+  provider = "postgres"
+  url      = env("PRISMA_DATABASE_URL")
 }
+
+
+
+
+
 
 generator client {
   provider = "prisma-client-js"
