@@ -1,23 +1,10 @@
-// prisma/schema.prisma
+generator client {
+  provider = "prisma-client-js"
+}
 
 datasource db {
   provider  = "postgresql"
-  url       = env("DATABASE_URL")  // proxy at runtime
-  directUrl = env("DIRECT_URL")    // direct for migrate/pull
-}
-
-
-
-generator client {
-  provider = "prisma-client-js"
-  
-}
-
-
-
-enum ReviewStatus {
-  PENDING
-  APPROVED
+  url       = env("DATABASE_URL")
 }
 
 model Testimon {
@@ -29,5 +16,10 @@ model Testimon {
   status    ReviewStatus @default(PENDING)
   createdAt DateTime     @default(now())
 
-  @@map("TESTIMON") // underlying SQL table name (uppercase)
+  @@map("TESTIMON")
+}
+
+enum ReviewStatus {
+  PENDING
+  APPROVED
 }
