@@ -1,6 +1,3 @@
--- CreateSchema
-CREATE SCHEMA IF NOT EXISTS "public";
-
 -- CreateEnum
 CREATE TYPE "public"."ReviewStatus" AS ENUM ('PENDING', 'APPROVED');
 
@@ -16,4 +13,3 @@ CREATE TABLE "public"."TESTIMON" (
 
     CONSTRAINT "TESTIMON_pkey" PRIMARY KEY ("id")
 );
-
